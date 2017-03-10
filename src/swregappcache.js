@@ -63,10 +63,13 @@ if ('serviceWorker' in navigator) {
   });
 }else{
   console.log("service worker not supported");
-  /*
-  var ins = document.body;
-  var ifme = document.createElement('iframe');
-  ifme.setAttribute('src','appcache.html');
-  ins.appendChild(ifme);
-  */
+    window.addEventListener('load', function() {
+      var ins = document.body;
+      var ifme = document.createElement('iframe');
+      ifme.setAttribute('src', 'appcache.html');
+      ifme.setAttribute('width', '0');
+      ifme.setAttribute('height', '0');
+      ifme.setAttribute('style', 'visibility: hidden');
+      ins.appendChild(ifme);
+    });
 }

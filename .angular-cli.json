@@ -12,11 +12,10 @@
         "manifest.json",
          "service-worker.js",
          "swregappcache.js",
-         "app.html",
          "appcache.html",
          "index.html"
       ],
-      "index": "app.html",
+      "index": "index.html",
       "main": "main.ts",
       "polyfills": "polyfills.ts",
       "test": "test.ts",
